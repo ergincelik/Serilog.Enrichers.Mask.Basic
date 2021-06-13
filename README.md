@@ -23,9 +23,7 @@ var log = new LoggerConfiguration()
 There are 3 operator
 
 ```csharp
-{
-   new EmailAddressMaskingOperator(),
-   new IbanMaskingOperator(),
-   new CreditCardMaskingOperator()
-};
+new EmailAddressMaskingOperator();
+new IbanMaskingOperator();
+new CreditCardMaskingOperator();
 ```
