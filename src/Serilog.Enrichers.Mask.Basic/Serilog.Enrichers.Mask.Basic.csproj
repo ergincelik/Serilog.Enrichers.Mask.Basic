@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>ergincelik</Authors>
+    <Company>ergincelik</Company>
+    <Copyright>2021 ergincelik</Copyright>
+    <PackageProjectUrl>https://github.com/ergincelik/Serilog.Enrichers.Mask.Basic/blob/master/README.md</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ergincelik/Serilog.Enrichers.Mask.Basic</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
