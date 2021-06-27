@@ -1,9 +1,24 @@
-﻿namespace Serilog.Enrichers.Mask.Basic.Demo
+﻿using System;
+
+namespace Serilog.Enrichers.Mask.Basic.Demo
 {
     static class Program
     {
         static void Main(string[] args)
         {
+            TestLogging();
+
+            Console.ReadLine();
+        }
+
+        static void TestLogging()
+        {
+            Log.Logger = new Serilog.LoggerConfiguration()
+                 .Enrich.WithMasking()
+                 .WriteTo.Console()
+                 .CreateBootstrapLogger();
+
+
             Log.Information("Hello, world");
 
             // An e-mail address in text
