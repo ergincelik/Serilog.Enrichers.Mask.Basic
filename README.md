@@ -11,6 +11,7 @@ Install from NuGet:
 Install-Package Serilog.Enrichers.Mask.Basic
 ```
 
+
 Modify logger configuration:
 
 ```csharp
@@ -19,6 +20,7 @@ var log = new LoggerConfiguration()
     .Enrich.WithMasking()
     .CreateLogger();
 ```
+
 
 There are 3 operator
 
