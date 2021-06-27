@@ -4,12 +4,6 @@
     {
         static void Main(string[] args)
         {
-            Log.Logger = new LoggerConfiguration()
-                 .Enrich.WithMasking()
-                 .WriteTo.Console()
-                 .CreateLogger();
-
-
             Log.Information("Hello, world");
 
             // An e-mail address in text
